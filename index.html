@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterments Luxe Homme</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #D2B48C; /* Tan color */
+            color: #3E2723;
+        }
+        nav {
+            background: #8B5A2B; /* Coffee color */
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        nav ul li a:hover {
+            background: #A67B5B;
+            border-radius: 5px;
+            transform: scale(1.1);
+        }
+        .container {
+            padding: 40px;
+            text-align: center;
+        }
+        .items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .item {
+            background: #FFF5E1;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 220px;
+            transition: transform 0.3s ease;
+        }
+        .item:hover {
+            transform: scale(1.05);
+        }
+        .item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .item button {
+            background: #8B5A2B;
+            color: white;
+            border: none;
+            padding: 10px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        .item button:hover {
+            background: #A67B5B;
+        }
+        .category {
+            display: none;
+        }
+        .active {
+            display: flex;
+        }
+    </style>
+    <script>
+        function showCategory(category) {
+            document.querySelectorAll('.category').forEach(cat => {
+                cat.classList.remove('active');
+            });
+            document.getElementById(category).classList.add('active');
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a onclick="showCategory('coats')">Coats</a></li>
+            <li><a onclick="showCategory('dresses')">Dresses</a></li>
+            <li><a onclick="showCategory('shoes')">Shoes</a></li>
+            <li><a onclick="showCategory('watches')">Watches</a></li>
+            <li><a onclick="showCategory('jewelry')">Jewelry </a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Welcome to Veterments Luxe Homme</h1>
+        <p>Select a category from the navigation bar to explore our luxury collection.</p>
+       
+        <div id="coats" class="category active items">
+            <div class="item"><img src="Image/Yellow coat.png" alt="Yellow Coat"><h3>Yellow Coat</h3><p>$150</p><button>Add to Cart</button></div>
+            <div class="item"><img src="Image/Navy Coat.png" alt="Navy Coat"><h3>Navy Coat</h3><p>$150</p><button>Add to Cart</button></div>
+            <div class="item"><img src="Image/Black coat.jpg" alt="Black Coat"><h3>Black Coat</h3><p>$150</p><button>Add to Cart</button></div>
+            <div class="item"><img src="Image/Tan Coat.jpg" alt="Tan Coat"><h3>Tan Coat</h3><p>$150</p><button>Add to Cart</button></div>
+            <div class="item"><img src="Image/Mint coat.jpg" alt="Mint Coat"><h3>Mint Coat</h3><p>$150</p><button>Add to Cart</button></div>
+            <div class="item"><img src="Image/White coat (1).jpg" alt="White Coat"><h3>White Coat</h3><p>$150</p><button>Add to Cart</button></div>
+            <div class="item"><img src="Image/Dark blue Coat.jpg" alt="Dark Blue Coat"><h3>Dark Blue Coat</h3><p>$150</p><button>Add to Cart</button></div>
+            <div class="item"><img src="Image/Dark Green coat.jpg" alt="Dark Green Coat"><h3>Dark Green Coat</h3><p>$150</p><button>Add to Cart</button></div>
+            <div class="item"><img src="Image/Cream coat.png" alt="Cream Coat"><h3>Cream Coat</h3><p>$150</p><button>Add to Cart</button></div>
+        </div>
+       
+        <div id="dresses" class="category items">
+            <div class="item"><img src="Image/Nsauye Dress Black.jpg" alt="Black Nsauye Dress"><h3>Black Nsauye Dress</h3><p>$150</p><button>Add to Cart</button></div>
+            <div class="item"><img src="Image/Nsauye Dress Red.jpg" alt="Red Nsauye Dress"><h3>Red Nsauye Dress</h3><p>$150</p><button>Add to Cart</button></div>
+            <div class="item"><img src="Image/Lace Chiffon Mini.jpg" alt="Lace Chiffon Mini"><h3>Lace Chiffon Mini</h3><p>$150</p><button>Add to Cart</button></div>
+            <div class="item"><img src="Image/Sequin Mermaid Black.jpg" alt="Sequin Mermaid Black"><h3>Sequin Mermaid Black</h3><p>$200</p><button>Add to Cart</button></div>
+            <div class="item"><img src="Image/Sequin Mermaid Blue.jpg" alt="Sequin Mermaid Blue"><h3>Sequin Mermaid Blue</h3><p>$200</p><button>Add to Cart</button></div>
+            <div class="item"><img src="Image/Sequin Mermaid Burgundy.jpg" alt="Sequin Mermaid Burgundy"><h3>Sequin Mermaid Burgundy</h3><p>$200</p><button>Add to Cart</button></div>
+            <div class="item"><img src="Image/Sequin Mermaid Rose Gold.jpg" alt="Sequin Mermaid Rose Gold"><h3>Sequin Mermaid Rose Gold</h3><p>$200</p><button>Add to Cart</button></div>
+        </div>
+       
+        <div id="shoes" class="category items">
+            <div class="item"><img src="Image/S 1 .jpg" alt="Black Italian Oxford Shoes"><h3>Black Italian Oxford Shoes</h3><p>$80</p><button>Add to Cart</button></div>
+            <div class="item"><img src="Image/Buy Dunkaston Brown Formal Shoes for Men Online at Best Prices in India -  JioMart_.png" alt="Black Italian Oxford Shoes"><h3>Brown Italian Oxford Shoes</h3><p>$80</p><button>Add to Cart</button></div>
+            <div class="item"><img src="Image/S 2.jpg" alt="Men Leather Black Shoe"><h3>Men Leather Black Shoe</h3><p>$60</p><button>Add to Cart</button></div>
+            <div class="item"><img src="Image/image (38).png" alt="Black Italian Oxford Shoes"><h3>Black Italian Oxford Shoes</h3><p>$60</p><button>Add to Cart</button></div>
+            <div class="item"><img src="Image/S 3.jpg" alt="Black Italian Oxford Shoes"><h3>Fashion Suede Black Women Shoes</h3><p>$80</p><button>Add to Cart</button></div>
+            <div class="item"><img src="Image/S 4.jpg" alt="Black Italian Oxford Shoes"><h3>Women Red Sole Pumps Shoes</h3><p>$120</p><button>Add to Cart</button></div>
+            <div class="item"><img src="Image/S 5.jpg" alt="Black Italian Oxford Shoes"><h3>Luxury  Banquest Women Shoes</h3><p>$85</p><button>Add to Cart</button></div>
+            <div class="item"><img src="Image/S 6.jpg" alt="Black Italian Oxford Shoes"><h3>Women Pumps Sexy Shoes</h3><p>$85</p><button>Add to Cart</button></div>
+        </div>
+       
+        <div id="watches" class="category items">
+            <div class="item"><img src="Image/191ff8e4-06c5-4315-94d9-8314d835ada6.jpg" alt="Silver White Wristwatch"><h3>Luxury Wristwatch For Men Sliver Black</h3><p>$60</p><button>Add to Cart</button></div>
+            <div class="item"><img src="Image/3b913150-ef45-4bd1-9c1c-499ce401de8c.jpg" alt="Silver White Wristwatch"><h3>Luxury Wristwatch For Men Sliver Rose Gold</h3><p>$60</p><button>Add to Cart</button></div>
+            <div class="item"><img src="Image/a6d94fa6-d839-44a7-a6e8-7fe5b14ca50e.jpg" alt="Silver White Wristwatch"><h3>Luxury Wristwatch For Men Rose Gold Black</h3><p>$60</p><button>Add to Cart</button></div>
+            <div class="item"><img src="Image/f4dc5979-83fd-43e0-a74d-20385b5d9af2.jpg" alt="Silver White Wristwatch"><h3>Luxury Wristwatch For Men Sliver Black</h3><p>$75</p><button>Add to Cart</button></div>
+            <div class="item"><img src="Image/White Steel Watch (1).jpg" alt="Silver White Wristwatch"><h3>UTHAI Watch For Men L93-02</h3><p>$80</p><button>Add to Cart</button></div>
+            <div class="item"><img src="Image/Black steel Watch.jpg" alt="Silver White Wristwatch"><h3>Silver UTHAI Watch For Men L93-01</h3><p>$80</p><button>Add to Cart</button></div>
+            <div class="item"><img src="Image/White steel watch 2nd edition.jpg" alt="Silver White Wristwatch"><h3>UTHAI Watch For Men L93-03</h3><p>$80</p><button>Add to Cart</button></div>
+            <div class="item"><img src="Image/Black steel watch 2nd edition.jpg" alt="Silver White Wristwatch"><h3>UTHAI Watch For Men L93-04</h3><p>$75</p><button>Add to Cart</button></div>
+        </div>
+    
+        <div id="jewelry" class="category items">
+            <div class="item"><img src="Image/Gold chain.jpg" alt="Men's Gold Bracelet"><h3>Men's Gold Bracelet</h3><p>$110</p><button>Add to Cart</button></div>
+            <div class="item"><img src="Image/Short Sliver chain.jpg" alt="Men's Gold Bracelet"><h3>Men's Silver Bracelet</h3><p>$110</p><button>Add to Cart</button></div>
+            <div class="item"><img src="Image/Steel chain.jpg" alt="Men's Gold Bracelet"><h3>Men's Stainless Steel Bracelet</h3><p>$40</p><button>Add to Cart</button></div>
+            <div class="item"><img src="Image/Ruby chain.jpg" alt="Men's Gold Bracelet"><h3>Men's Ruby Bracelet</h3><p>$110</p><button>Add to Cart</button></div>
+            <div class="item"><img src="Image/Poker black card.png" alt="Men's Gold Bracelet"><h3>Poker Card Ace of Spades Necklace</h3><p>$30</p><button>Add to Cart</button></div>
+            <div class="item"><img src="Image/Poker red card.png" alt="Men's Gold Bracelet"><h3>Poker Card Ace of Hearts Necklace</h3><p>$30</p><button>Add to Cart</button></div>
+            <div class="item"><img src="Image/Gold Long Chain.jpg" alt="Men's Gold Bracelet"><h3>Luxury Full Rhinestone Paved Necklace Gold</h3><p>$150</p><button>Add to Cart</button></div>
+            <div class="item"><img src="Image/Diamond Chain.jpg" alt="Men's Gold Bracelet"><h3>Luxury Full Rhinestone Paved Necklace Diamond</h3><p>$150</p><button>Add to Cart</button></div>
+            <div class="item"><img src="Image/Gold set 1.png" alt="Men's Gold Bracelet"><h3>Earrings Set for Women AY01</h3><p>$60</p><button>Add to Cart</button></div>
+            <div class="item"><img src="Image/Gold set 2.png" alt="Men's Gold Bracelet"><h3>Earrings Set for Women AY02</h3><p>$55</p><button>Add to Cart</button></div>
+            <div class="item"><img src="Image/Gold set 3.png" alt="Men's Gold Bracelet"><h3>Earrings Set for Women AY03</h3><p>$35</p><button>Add to Cart</button></div>
+            <div class="item"><img src="Image/Gold set 4.png" alt="Men's Gold Bracelet"><h3>Earrings Set for Women AY04</h3><p>$39</p><button>Add to Cart</button></div>
+            <div class="item"><img src="Image/Gold set 5.png" alt="Men's Gold Bracelet"><h3>Earrings Set for Women AY05</h3><p>$25</p><button>Add to Cart</button></div>
+        </div>
+    </div>
+</body>
+</html>
